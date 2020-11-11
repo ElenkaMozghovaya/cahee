@@ -1,0 +1,28 @@
+.subscribe {
+    padding: 145px 0 165px 165px;
+    &__background {
+        background-image: url('/assets/images/img-bg_SUBSCRIBE.png');
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+    &__subtitle {
+        @include text($H40, 700, $FONT-COLOR);
+        line-height: 1.6;
+        margin-bottom: 34px;
+        text-align: flex-start;
+    }
+    &__desc {
+        max-width: 542px;
+        @include text($H17, 300, $FONT-COLOR);
+        line-height: 1.6;
+        margin-bottom: 31px;
+        text-align: flex-start;
+        
+    }
+    &__form {
+        @include flex(space-between,center,row);
+        max-width: 760px;
+    }
+}
+
+

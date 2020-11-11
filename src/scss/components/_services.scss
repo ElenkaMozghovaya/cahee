@@ -1,0 +1,54 @@
+.services { 
+    @include flex (center, center, row);
+    width: 100%;
+    min-height: 790px;
+    &__background {
+        background-color: $BG-SECTION_SERVICES-COLOR;
+    }
+    &__banner {
+        background-image: url(/assets/images/img_SERVICES.png);
+        min-height: 527px;
+        @include flex(center, stretch, column);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+    }
+}
+.services-list {
+    @include flex(center, flex-start, column, wrap);
+    margin: 0 205px;
+    &__item:not(:last-of-type) {
+            margin-bottom: 20px;
+    }
+    
+}
+.services-item {
+    @include flex(space-between, center);
+    min-width: 418px;
+    height: 100px;
+    background-color: $WHITE;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.2s ease;
+    @include hover() {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+    &__name {
+        line-height: 1.5;
+        text-align: center;
+        margin: 0 79px;
+        @include text ($H20, 700, $FONT-COLOR);
+        &--large {
+            @include text ($H20, 700, $FONT-COLOR);
+            text-align: center;
+        }
+    }
+    &__icon {
+        width: 47px;
+        height: 44px;
+    }
+    &__icon-wrapper {
+        @include flex(center, row, wrap);
+        border-left: 1px solid $BORDER_LINE-COLOR;
+        padding: 28px 26px;
+    }
+}

@@ -1,0 +1,28 @@
+@import './core/vars';
+@import './core/mixins';
+@import './core/common';
+
+//FONTS
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+//Components
+@import './components/header';
+@import './components/nav';
+@import './components/button';
+@import './components/scroll-button';
+@import './components/about';
+@import './components/title';
+@import './components/services';
+@import './components/gallery';
+@import './components/grid';
+@import './components/subscribe';
+@import './components/blog';
+@import './components/card';
+@import './components/contact';
+@import './components/footer';
+@import './components/logo';
+@import './components/form';

@@ -1,0 +1,56 @@
+.card {
+    height: 310px;
+    min-width: 370px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;     
+    &__image {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    &__date-box {
+      width: 60px;
+      height: 60px;
+      border-radius: 5px;
+      @include flex(space-between, center, column);
+      background-color: rgba(26, 26, 26, 0.5);
+      left: 30px;
+      bottom: 220px;
+      position: relative;
+      z-index: 1;
+    }
+    &__number {
+        @include text($H32, 700, $WHITE);
+        line-height: 25px;
+        padding-top: 9px;
+    }
+    &__month {
+        text-transform: uppercase;
+        @include text($H21, 900, $WHITE);
+        line-height: 25px;
+    }
+    &__content {
+        @include flex(flex-end, flex-start, column);
+        position: absolute;
+        z-index: 1;
+        height: 50%;
+        padding: 0 20px 23px;
+        background-image: $CONTENT-GRADIENT;
+     
+    }
+    &__title {
+      @include text($H20, 700, $WHITE);
+      line-height: 25px; 
+      margin-bottom: 18px;
+    }
+    &__info {
+        @include text($H13, 300, $WHITE);
+    }
+  }

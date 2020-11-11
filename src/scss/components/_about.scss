@@ -1,0 +1,30 @@
+.section-about {
+    background-color: $BG-SECTION_ABOUT-COLOR;
+    width: 100%;
+    min-height: 700px;
+    &__container {
+    @include flex(flex-start, stretch, row);
+    padding-top: 70px;
+    padding-bottom: 70px;
+    }
+
+    &__content {
+        width: 100%;
+        @include flex(center, center, column);
+    }
+    
+    &__image {
+        @include flex;
+        position: relative;
+        @include padding-hack(50%);
+        width: 100%;
+    }
+    &__text {
+    max-width: 500px;
+    @include text($H17, 300, $WHITE);
+    line-height: 1.5;
+    &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+    }
+}

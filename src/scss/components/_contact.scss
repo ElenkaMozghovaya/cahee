@@ -1,0 +1,55 @@
+.section-contact {
+    @include flex-col;
+    text-align: center;
+    padding: 80px 24px 120px;
+    &__background {
+        flex-grow: 1;
+        background-image: url('/assets/images/img-bg_CONTACT.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    &__desc {
+        max-width: 350px;
+        margin: 0 auto;
+        @include text($H17, 400, $FONT-COLOR);
+        line-height: 1.5;
+        margin-bottom: 46px;
+    }
+    &__main {
+        @include flex(space-around);
+    }
+    &__form {
+        @include flex(center, stretch, column);
+        max-width: 500px;
+        width: 100%;
+        margin-bottom: 24px;
+        &:valid:not(:empty) .button{
+        visibility: visible;
+        opacity: 1;
+        cursor: pointer;
+        } 
+    }
+    &__button {
+        transition: opacity 0.8s ease;
+        cursor: auto;
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+.contact {
+    @include flex-col(flex-start,flex-start);
+    &__title {
+        text-transform: uppercase;
+        @include text($H17, 700, $FONT-COLOR);
+        line-height: 1.5;
+    }
+    &__desc {
+        @include text($H20, 400, $FONT-COLOR);
+        line-height: 1.25;
+    }
+    &__desc:not(:last-of-type) {
+        margin-bottom: 15px;
+    }
+}
+
