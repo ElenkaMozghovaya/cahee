@@ -8,7 +8,7 @@
     "start": "npm run dev",
     "build": "parcel build ./src/index.html --public-url ./ --no-cache -d build",
     "deploy": "gh-pages-deploy",
-    "clean-source": "rimraf dist README.MD README.md src .postcssrc .posthtmlrc package.json"
+    "clean-source": "rimraf package-lock.json dist build README.MD README.md src .postcssrc .posthtmlrc package.json"
   },
   "gh-pages-deploy": {
     "staticpath": "build",
